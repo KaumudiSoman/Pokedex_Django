@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Abilities of Pokemons</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body style="background-color:powderblue;">
+      <nav class="navbar navbar-expand-lg ", style="background-color: #DC143C;">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1 ">Abilities</span>
+        </div>
+      </nav>
+    <ul class="list-group" style="background-color:powderblue;">
+        {% for i in pokemon_ability %}
+          <li class="list-group-item" style="background-color:powderblue;">{{ i }}</li>
+        {% endfor %} 
+      </ul>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
